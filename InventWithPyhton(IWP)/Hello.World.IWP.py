@@ -5,4 +5,4 @@
 print('Hello World...')
 print("What's your name?")
 myName = input()
-print("It's good to meet you, " + myName + '.')
+print("It's nice to meet you, " + myName + '.')
