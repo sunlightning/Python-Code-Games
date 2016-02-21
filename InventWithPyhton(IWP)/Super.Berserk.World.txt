@@ -1,0 +1,29 @@
+Super Berserk World
+
+Game like Super Mario Bros(even borrowing its style and mechanics)
+
+A homage to Berserk in a game with the mechanics and design of Super Mario Bros(just a little darker and spookier)
+
+Modifications:
+
+Button:
+  +a button to attack with the sword(hits monster, block, destroy things)
+
+Damage:
+  +all the small monsters die with a single attack
+  +the player dies with a single attack as well
+
+Power Up:
+  +if takes the cannon arm, will get a single fire attack that explodes everything and does huge damage
+  +if takes damage before using it, will lose it
+
+Bosses:
+  +giant monsters and knights that dies after 10 attacks
+  +the room of the bosses will be bigger than in the original Super Mario Bros and will have elements to help the player kill the boss(the room can "slide", just like
+the normal game outside bosses.
+
+To start:
+  +Create just the first stage of Mario Bros with its sprites and all to get the basic stuff done.
+  +Then add the new mechanics and sprites
+  +Change all the sprites and behavior if needed
+  +Finish the First Stage of Super Berserk World
