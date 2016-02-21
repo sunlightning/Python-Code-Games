@@ -44,13 +44,13 @@ while playerHP > 0:
     if playerGuess > randomNumber:
         print("Your guess's too high! HAHAH!")
         playerHP -= swordDamage
-        print("You've taken damage! -20 HP")
+        print("You've taken damage! -" + str(swordDamage) + " HP")
         print("HP: " + str(playerHP))
 
     elif playerGuess < randomNumber:
         print("Your guess's too low! HAHAH!")
         playerHP -= swordDamage
-        print("You've taken damage! -20 HP")
+        print("You've taken damage! -" + str(swordDamage) + " HP")
         print("HP: " + str(playerHP))
 
     else:
