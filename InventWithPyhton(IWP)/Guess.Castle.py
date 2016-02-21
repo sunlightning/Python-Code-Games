@@ -1,7 +1,6 @@
 #This is a "Guess the Number" game.
 #The player wins if he/she guess it right within 6 tries.
 
-arroz
 #library import
 import random
 
