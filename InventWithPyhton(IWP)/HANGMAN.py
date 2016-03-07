@@ -1,6 +1,5 @@
 import random
 HANGMANPICS = ['''
-
 +---+
  |  |
     |
@@ -8,7 +7,6 @@ HANGMANPICS = ['''
     |
     |
 ==========''','''
-
 +---+
  |  |
  O  |
@@ -16,7 +14,6 @@ HANGMANPICS = ['''
     |
     |
 ==========''','''
-
 +---+
  |  |
  O  |
@@ -24,7 +21,6 @@ HANGMANPICS = ['''
     |
     |
 ==========''','''
-
 +---+
  |  |
  O  |
@@ -32,7 +28,6 @@ HANGMANPICS = ['''
     |
     |
 ==========''','''
-
 +---+
  |  |
  O  |
@@ -40,7 +35,6 @@ HANGMANPICS = ['''
     |
     |
 ==========''','''
-
 +---+
  |  |
  O  |
@@ -48,7 +42,6 @@ HANGMANPICS = ['''
 /   |
     |
 ==========''','''
-
 +---+
  |  |
  O  |
@@ -121,8 +114,8 @@ def playAgain():
     return input().lower().startswith('y')
 
 print('HANGMAN')
-missedLetters = "
-correctLetters = "
+missedLetters = ''
+correctLetters = ''
 secretWord = getRandomWord(words)
 gameIsDone = False
 
@@ -146,22 +139,22 @@ while True:
             print('Yes! The secret word is ' + secretWord + '! You\ve won!')
             gameIsDone = True
 
-        else:
-            missedLetters = missedLetters + guess
+    else:
+        missedLetters = missedLetters + guess
 
             #Check if player has guessed too many times and lost.
-            if len(missedLetters) == len(HANGMANPICS) -1:
+    if len(missedLetters) == len(HANGMANPICS) -1:
                 displayBoard(HANGMANPICS, missedLetters, correctLetters, secretWord)
                 print('You\ve run out of guesses!\n After ' + str(len(missedLetters)) + ' missed guesses and ' + str(len(correctLetters)) + ' correct guesses, the word was  "'  + secretWord + '"')
                 gameIsDone = True
 
         #Ask the player if they wnat to play again(but only if the game is done).
-        if gameIsDone:
-            if playAgain():
-                missedLetters = "
-                correctLetters = "
+    if gameIsDone:
+        if playAgain():
+                missedLetters = ''
+                correctLetters = ''
                 gameIsDone = False
                 secretWord = getRandomWord(words)
 
-            else:
+        else:
                 break
